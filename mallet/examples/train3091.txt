@@ -1,0 +1,63 @@
+Former Alaska Gov. Sarah Palin has endorsed Roy Moore in the Alabama U.S. Senate race over establishment-backed Luther Strange, an endorsement Palin and Moore’s campaign provided to Breitbart News ahead of its public release.
+
+Palin’s endorsement of Moore—the former Chief Justice of the Alabama Supreme Court—ahead of the Sept. 26 runoff is a huge momentum booster for the conservative candidate as he extends his commanding lead in the polls over Strange.
+
+“Glad he’s running and am honored to endorse Judge Roy Moore for the US Senate,” Palin said in the endorsement statement. “Judge Moore has shown he has what it takes to stand up to the out-of-touch political establishment. The Judge has proven he’s not afraid of a fight for what is right, and he’s ready to take on DC’s swamp monsters and help make America great again. We need more bold leaders like Judge Moore who will fight for all of us in the US Senate.”
+
+Moore, in response, thanked Palin for the endorsement and said he was honored to have it.
+
+“I am honored to have the endorsement of Governor Sarah Palin,” Moore said. “Governor Palin has a strong record of speaking out for conservative causes and standing up to the Washington establishment. Having her support shows how conservatives across the country are uniting behind our campaign to send a message to Mitch McConnell and the Washington elites who are trying to buy this election.”
+
+Moore, in two separate recent polls, has taken a commanding lead over Strange after the Aug. 15 primary heading into the Sept. 26 runoff. A JMC Analytics survey has Moore at 51 percent and Strange lagging significantly far behind at 32 percent. A Decision Desk HQ poll has Strange down around 32 percent and Moore over 50 percent as well.
+
+To mitigate the damage, Strange’s and Senate Majority Leader Mitch McConnell’s allies at the vehemently anti-Trump Senate Leadership Fund fabricated a new push poll showing Moore up four points over Strange—leading Strange 45 percent to 41 percent.
+
+The survey conducted at the McConnell group Senate Leadership Fund’s behest by pollster Jan van Lohuizen was conducted from Aug. 21 to Aug. 23, surveying 601 GOP voters with a margin of error of four points. The fact that they could not even produce a push poll that shows the candidate they support, Strange, in the lead is a stark admission of just how badly Strange’s campaign is doing in Alabama. Strange’s allies leaked the push poll to the Washington Examiner’s David Drucker, a writer who often sides with the GOP establishment.
+
+The Senate Leadership Fund is run by Steven Law, an anti-Trump GOP establishment activist who has worked alongside Karl Rove at American Crossroads. President Trump thinks very lowly of Rove, telling Breitbart News in an April 2016 interview that Rove is a “dishonorable guy.” Trump believes that Rove should not be allowed to write for the Wall Street Journal, as he is so “dishonorable,” and Law’s and Senate Leadership Fund’s deep ties to Rove only hurt Strange more than he is already hurting in the race.
+
+What’s more, Strange and his allies are planning—sources close to them tell Breitbart News—a series of smear tactics against Moore in the final weeks. The attacks are likely to revive old and baseless charges against Moore, these sources say–something Moore is ready for, given the fact that the Washington establishment has already dumped more than $10 million into Alabama on behalf of the failing Strange’s campaign. In an interview with Breitbart News Sunday on SiriusXM Patriot Channel 125 this past weekend, Moore said he was ready for the onslaught of false attacks from Strange and his D.C. allies.
+
+“I think $14 million is exactly the problem they got, but with the results they got they better start wondering when they’re going to stop throwing away their money,” Moore told Breitbart News Sunday. “Attack ads aren’t working in this state. It’s obvious when an opponent attacks both of his opponents with negative ads or even one, but both opponents? They’ve been trying to manipulate this race from the very beginning and they’ve simply failed. I don’t know what they’re planning in the future. I expect they’re going to continue to come up and present some negative ads that are false in their nature because they got the money to do it and they know we’re strapped with money. But still, God has given the people vision to see through this.”
+
+Strange’s decision to align himself against President Trump on the issue of whether to eliminate the 60-vote filibuster threshold in the U.S. Senate when it comes to passing legislation further complicates matters. Moore stands firmly with President Trump, against McConnell, in believing that the filibuster rule should be eliminated. Strange actually joined dozens of other establishment senators from both the GOP and Democratic Party in writing a letter to McConnell and Senate Minority Leader Chuck Schumer earlier this year opposing the president and pushing for no changes to the rules. Strange’s campaign spokeswoman Shana Teehan has not responded when asked if the senator regrets signing that letter or would like to remove his name from the anti-Trump document.
+
+Moore, meanwhile, is 100 percent with Trump on changing the Senate rules.
+
+“I think the people should understand that this is a rule—it’s not a Constitutional rule, it’s a Senate rule,” Moore told Breitbart News Sunday. “The Founding Fathers described when they preferred super majorities on things like vetoes of presidents, overriding a veto, or expelling a member from one of the two houses of Congress or passing a Constitutional amendment. They have a super majority rule which is simply a rule of anything over a majority which is one over half. It’s not in the Constitution. Quite frankly, it’s unconstitutional. And it’s preventing many bills from going through the Senate. They can’t even get to the floor because of the filibuster rule. A filibuster is different. That’s when you protest bills and speak against them. They can have ways to get that restricted but they can’t put a 60-vote rule and cling to that and say that’s what the Constitution says—it isn’t.”
+
+Strange, whose campaign is struggling to gain momentum, has refused to appear on Breitbart News radio on SiriusXM Patriot Channel 125 to discuss his campaign. It is unclear why he is refusing to talk to conservatives who support the president.
+
+Palin’s move to endorse Moore comes after she endorsed Danny Tarkanian against Sen. Dean Heller (R-NV) in Nevada’s GOP primary earlier on Thursday, also in a Breitbart News exclusive.
+
+
+0.42381234438661464 [('republican', 0.05598156872184588), ('election', 0.03655307589147554), ('party', 0.03596850177091572), ('democrat', 0.03424916612221038), ('democratic', 0.02303909769265156), ('candidate', 0.022213816581272996), ('voter', 0.01980674667308552), ('campaign', 0.01485506000481414), ('moore', 0.014717513152917713), ('poll', 0.014545579588047178)]
+
+
+0.09226380743475589 [('told', 0.022066367290647024), ('week', 0.016247035672839194), ('added', 0.011218191297912777), ('time', 0.010663168340144979), ('people', 0.010562255075096288), ('asked', 0.010528617320080058), ('made', 0.010461341810047597), ('statement', 0.010444522932539483), ('thursday', 0.010343609667490792), ('meeting', 0.009889499974771683)]
+
+
+0.08197256597055017 [('bill', 0.06458547527806337), ('house', 0.032869115493659846), ('republican', 0.031872137582951675), ('senate', 0.026326447954637504), ('congress', 0.022494314110352992), ('legislation', 0.021216936162258154), ('year', 0.02059382496806555), ('reform', 0.01691746892232919), ('vote', 0.014985824220332119), ('passed', 0.011621023771692059)]
+
+
+0.05483515801095261 [('trump', 0.22240488492249882), ('president', 0.08788163457022076), ('white', 0.036848285580084544), ('house', 0.03231564114607797), ('donald', 0.027125410991075623), ('administration', 0.013856270549553781), ('bannon', 0.013527477689055895), ('campaign', 0.008313762329732268), ('office', 0.008196336308125881), ('secretary', 0.008149365899483325)]
+
+
+0.05111661924960223 [('people', 0.03978651773364303), ('thing', 0.020956755487120598), ('time', 0.01757705457107811), ('make', 0.01616775843620325), ('good', 0.014888952684187176), ('year', 0.009825925829266382), ('work', 0.009656288331549965), ('life', 0.008964689302398413), ('back', 0.008664561421823211), ('kind', 0.007163922018947204)]
+
+
+0.04699291855221187 [('policy', 0.011627254621448008), ('political', 0.008359280765238857), ('american', 0.008233050015428203), ('long', 0.0075317680720356816), ('power', 0.007026845072793065), ('interest', 0.006900614322982412), ('effort', 0.0067884092120396086), ('support', 0.006325563129400544), ('leader', 0.005960896518836433), ('president', 0.0056803837414794245)]
+
+
+0.042778820609420926 [('court', 0.08165247700131421), ('supreme', 0.027769841723330094), ('case', 0.026627049882863837), ('judge', 0.02457002457002457), ('legal', 0.01948460087994972), ('justice', 0.018913204959716587), ('lawsuit', 0.017313296383063826), ('federal', 0.016741900462830694), ('state', 0.014227758413804926), ('attorney', 0.011256499628592652)]
+
+
+0.040010760064571285 [('science', 0.06538160979421724), ('palin', 0.04402188069809846), ('time', 0.03698879916644959), ('possum', 0.02969523313362855), ('talk', 0.028132326126595466), ('news', 0.025527481114873664), ('tidbit', 0.025527481114873664), ('monday', 0.02135972909611878), ('discovery', 0.021099244594946602), ('morning', 0.017973430580880436)]
+
+
+0.03694052987115034 [('senator', 0.05842893252965196), ('senate', 0.0391794672370212), ('graham', 0.033443515457903944), ('republican', 0.0218743923779895), ('mccain', 0.01827727007583123), ('cruz', 0.015944001555512347), ('democrat', 0.013610733035193466), ('john', 0.013027415905113747), ('mcconnell', 0.012735757340073886), ('flake', 0.012152440209994167)]
+
+
+0.03365049868837212 [('obama', 0.06529137651185926), ('administration', 0.05115451070736688), ('rule', 0.03654641604272475), ('agency', 0.028221372846745904), ('president', 0.026964762553013246), ('congress', 0.02246190900047123), ('federal', 0.017697261636734907), ('regulation', 0.015812346196135925), ('government', 0.015079323524791874), ('executive', 0.012723179224043143)]
+
+
