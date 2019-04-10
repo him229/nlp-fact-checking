@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import nltk
-# nltk.download('stopwords')
-# nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('wordnet')
 import re
 import numpy as np
 import pandas as pd
@@ -19,12 +19,26 @@ import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
 from gensim.models import CoherenceModel
 from gensim.test.utils import datapath
+from collections import defaultdict
 import spacy
 from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
 import json
 
+# from twilio.rest import Client
 
+# account_sid = ''
+# auth_token = ''
+# client = Client(account_sid, auth_token)
+
+# def tw_msg(msg):
+#     message = client.messages \
+#                 .create(
+#                      body=msg,
+#                      from_='',
+#                      to=''
+#                  )
+  
 
 """
 doc_type = 'train'
@@ -42,9 +56,10 @@ doc_num = 3091
 
 
 
-
-
-
+# Reading in 10k articles for each category
+# CATEGORY_COUNT = 10000
+# total_article_count = 10 * CATEGORY_COUNT
+# article_count = defaultdict(int)
 # filename = 'news_cleaned_2018_02_13.csv'
 # train_docs = []
 # test_docs = []
@@ -52,53 +67,71 @@ doc_num = 3091
 # with open(filename) as f:
 #     reader = csv.reader(f)
 #     for row in reader:
+#         tag = row[3]
+#         document_txt = row[5]
 #         #ignore if not political and short text
-#         if(not row[3] == 'political' or len(row[5]) < 1000):
+#         if(article_count[tag] > CATEGORY_COUNT or len(document_txt) < 1000):
 #             continue
-#         if(i >= 5100):
+#         if(sum(article_count.values()) >= total_article_count):
 #             break
-#         train_docs.append(row[5])
-#         i+=1
-# train_docs = train_docs[:5000]
-# test_docs = test_docs[5000:]
+#         if(article_count[tag] <= CATEGORY_COUNT - 200):
+#             train_docs.append(document_txt)
+#         else:
+#             test_docs.append(document_txt)
+#         article_count[tag] += 1
+#         if(article_count[tag] >= CATEGORY_COUNT-10):
+#             print(tag)
+        
+# train_docs = train_docs[:total_article_count]
+# test_docs = test_docs[total_article_count:]
 
-with open('test_lda.json', 'r') as outfile:  
+
+with open('test_lda_15k.json', 'r') as outfile:
     test_docs = json.load(outfile)
-with open('train_lda.json', 'r') as outfile:  
-    train_docs = json.load(outfile)
+train_docs = []
+# with open('train_lda.json', 'r') as outfile:
+#     train_docs = json.load(outfile)
 
+# tw_msg("read data")
 
-
-stop = set(stopwords.words('english'))
-lemma = WordNetLemmatizer()
 def clean(doc):
     deacc = gensim.utils.simple_preprocess(doc, deacc=True, min_len=4)
     stop_free = [i for i in deacc if i not in stop]
     normalized = [lemma.lemmatize(word) for word in stop_free]
     return normalized
-train_docs_clean = [clean(doc) for doc in train_docs]
-test_docs_clean = [clean(doc) for doc in test_docs]
 
-dictionary = corpora.Dictionary(train_docs_clean)
-doc_term_matrix = [dictionary.doc2bow(doc) for doc in train_docs_clean]
+try:
+    stop = set(stopwords.words('english'))
+    lemma = WordNetLemmatizer()
 
-test_dictionary = corpora.Dictionary(test_docs_clean) 
-test_doc_term_matrix = [dictionary.doc2bow(text) for text in test_docs_clean]
+    train_docs_clean = [clean(doc) for doc in train_docs]
+    test_docs_clean = [clean(doc) for doc in test_docs]
 
-Lda = gensim.models.wrappers.LdaMallet
+    dictionary = corpora.Dictionary(train_docs_clean)
+    doc_term_matrix = [dictionary.doc2bow(doc) for doc in train_docs_clean]
 
-####### SAVE MODEL 
-# model_path = '/Users/himankyadav/Downloads/mallet-2.0.8/bin/mallet'
-# ldamodel = Lda(model_path, corpus=doc_term_matrix, num_topics=100, id2word = dictionary, optimize_interval=10)
-# temp_file = datapath("model_LDA_mallet")
-# ldamodel.save(temp_file)
+    test_dictionary = corpora.Dictionary(test_docs_clean) 
+    test_doc_term_matrix = [dictionary.doc2bow(text) for text in test_docs_clean]
+
+    Lda = gensim.models.wrappers.LdaMallet
+
+    # tw_msg("about to train")
+
+    ####### SAVE MODEL 
+#     model_path = 'Mallet/bin/mallet'
+#     ldamodel = Lda(model_path, corpus=doc_term_matrix, workers=1, num_topics=200, id2word = dictionary, optimize_interval=10, alpha=0.05, iterations=2000)
+#     temp_file = datapath("model_LDA_mallet")
+#     ldamodel.save(temp_file)
+except Exception as e:
+    print(e)
+    tw_msg(str(e))
 
 ####### LOAD MODEL
-temp_file = datapath("model_LDA_mallet")
-ldamodel = Lda.load('model_LDA_mallet')
+temp_file = datapath("model_LDA_mallet_15k")
+ldamodel = Lda.load('model_LDA_mallet_15k')
 
-# print(ldamodel.print_topics(num_words=3))
-# len(train_docs)
+print(ldamodel.print_topics(num_words=3))
+len(train_docs)
 
 
 if doc_type=='train':
@@ -118,8 +151,7 @@ elif doc_type=='test':
         print(top[1], ldamodel.show_topic(top[0]))
         print("\n")
 
-
-# print(datapath('a'))
+# tw_msg("done with training LDA MALLET")
 
 # FNN = 'D:/6740/Articles/'
 # text_data = []
@@ -185,4 +217,3 @@ elif doc_type=='test':
 #         print(top[1])
 #         print(model.print_topic(top[0]))
 #     i = i+ 1
-
